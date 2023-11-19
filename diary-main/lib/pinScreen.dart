@@ -45,7 +45,9 @@ class _PinScreenState extends State<PinScreen> {
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 16),
-            error ? const Text('Incorrect pin. Try again.') : Container(),
+            error
+                ? const Text('Incorrect pin. Please Try again.')
+                : Container(),
             PinCodeTextField(
               highlight: true,
               pinBoxHeight: 64,
